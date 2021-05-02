@@ -1,0 +1,440 @@
+
+body {
+
+margin-top: 0;
+
+}
+
+.Head {
+
+position: absolute;
+width: 98.3%;
+height: 105px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+background-color: red;
+border-bottom: limegreen 4px solid;
+border-right: limegreen 4px solid;
+border-left: limegreen 4px solid;
+
+}
+
+.AuthForm {
+
+position: relative;
+width: 170px;
+left: 73.5rem;
+
+}
+
+.Login::placeholder{color: lime;}
+.Pass::placeholder{color: lime}
+
+.Login {
+
+width: 150px;
+margin-top: 0.5em;
+background-color: navy;
+color: lime;
+border-color: navy;
+border: 2px solid navy;
+
+}
+
+.Pass {
+
+width: 150px;
+margin-top: 0.5em;
+background-color: navy;
+color: lime;
+border: 2px solid navy;
+
+}
+
+.AuthButton {
+
+position: relative;
+margin-top: 1.8em;
+left: 111px;
+background-color: navy;
+color: lime;
+
+}
+
+.Register {
+
+position: relative;
+left: 73.5rem;
+top: -2.5em;
+color: gold;
+font-weight: 400;
+
+}
+
+.CurrentTime {
+
+position: relative;
+top: -3.8rem;
+width: 50px;
+left: 1em;
+color: yellow;
+
+}
+
+.RememberMe {
+
+position: relative;
+left: -3.4rem;
+top: 0.5em;
+z-index: 1;
+
+}
+
+.RememberMeTxt {
+
+position: absolute;
+visibility: hidden;
+left: 74rem;
+top: 4em;
+width: 130px;
+color: yellow;
+z-index: 0;
+
+}
+
+.link_table {
+
+position: absolute;
+background-color: royalblue;
+width: 243px;
+height: 24px;
+top: 1em;
+left: 1em;
+border-radius: 10px 10px 10px 10px;
+
+}
+
+.FormulLnk {
+
+position: relative;
+color: rgb(255, 201, 25);
+font-size: 1em;
+font-weight: 800;
+top: 0.2rem;
+margin-left: 4px;
+
+}
+
+.LearnLnk {
+
+position: relative;
+color: rgb(255, 201, 25);
+font-size: 1em;
+font-weight: 800;
+top: 0.2rem;
+margin-left: 4px;
+
+}
+
+.QuestionTalk {
+
+position: relative;
+margin-left: 4px;
+top: 0.2rem;
+font-weight: 800;
+font-size: 1em;
+color: rgb(255, 201, 25);
+
+}
+
+.TextMath {
+
+position: absolute;
+color: yellow;
+left: 30rem;
+top: -0.5rem;
+width: 300px;
+
+}
+
+.Menu {
+
+position: absolute;
+top: 6.8rem;
+width: 500px;
+height: 40px;
+background-color: rgb(255, 201, 25);
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
+left: 1.5rem;
+border-left: 4px solid limegreen;
+border-right: 4px solid limegreen;
+border-bottom: 4px solid limegreen;
+
+}
+
+.AlgTxt {
+
+position: relative;
+color: blueviolet;
+top: -1rem;
+left: 2rem;
+width: 90px;
+
+}
+
+.AlgTxt:hover {
+
+color: orangered;
+
+}
+
+.GeomTxt {
+
+position: relative;
+left: 22rem;
+top: -3.9rem;
+color: blueviolet;
+width: 115px;
+
+}
+
+.GeomTxt:hover {
+
+color: orangered;
+
+}
+
+.foot {
+
+position: absolute;
+top: 35.88rem;
+background-color: limegreen;
+width: 98.3%;
+height: 7.5vh;
+margin: none;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-top: red 4px solid;
+border-left: red 4px solid;
+border-right: red 4px solid;
+
+}
+
+.NumbTabl {
+
+position: absolute;
+top: 1.2rem;
+width: 50px;
+height: 15px;
+left: 5em;
+background-color: navy;
+color: lime;
+text-align: center;
+
+}
+
+.Sun {
+
+position: absolute;
+width: 40px;
+height: 40px;
+top: 0.1rem;
+left: 80rem;
+border: 2px solid yellow;
+border-radius: 100%;
+background-color: black;
+
+}
+
+.StartButton {
+
+position: absolute;
+visibility: hidden;
+color: lime;
+background-color: navy;
+left: 9rem;
+top: 1.2rem;
+
+}
+
+.MathGrid {
+
+position: absolute;
+top: 14rem;
+display: grid;
+grid-column-gap: 20px;
+visibility: hidden;
+grid-template-areas: 
+
+'UravneniaTxt Oby4nye Kvadratnye Stepeni Drobi Korni Logarifm Syst .'
+'NeravenstvaTxt  NOby4nye NKvadratnye NStepeni NDrobi NKorni NLogarifm NSystem .'
+'ProcentyTxt OcruglenieTxt GrafikiTxt TrigonometryTxt Vyrazenia . . . .'
+
+;
+
+
+}
+
+
+.Syst {
+
+grid-area: Syst;
+color: red;
+
+}
+
+
+.Work_Txt {
+
+position: absolute;
+top: 10rem;
+color: lime;
+visibility: hidden;
+
+}
+
+
+
+.Vyrazenia {
+
+grid-area: Vyrazenia;
+color: teal;
+
+}
+
+.UravneniaTxt {
+
+grid-area: UravneniaTxt;
+color: lime;
+
+}
+
+.Oby4nye {
+
+grid-area: Oby4nye;
+color: red;
+
+}
+
+.Kvadratnye {
+
+grid-area: Kvadratnye;
+color: red;
+
+}
+
+.Stepeni {
+
+grid-area: Stepeni;
+color: red;    
+
+}
+
+.Drobi {
+
+grid-area: Drobi;
+color: red;
+
+}
+
+.Korni {
+
+grid-area: Korni;
+color: red;
+
+}
+
+.Logarifm {
+
+grid-area: Logarifm;
+color: red;
+
+}
+
+
+
+.NeravenstvaTxt {
+
+grid-area: NeravenstvaTxt;
+color: lime;
+
+}
+
+.NOby4nye {
+
+grid-area: NOby4nye;
+color: gold;
+
+}
+
+.NKvadratnye {
+
+grid-area: NKvadratnye;
+color: gold;
+
+}
+
+.NStepeni {
+
+grid-area: NStepeni;
+color: gold;
+
+}
+
+.NDrobi {
+
+grid-area: NDrobi;
+color: gold;
+
+}
+
+.NKorni {
+
+grid-area: NKorni;
+color: gold;
+
+}
+
+.NLogarifm {
+
+grid-area: NLogarifm;
+color: gold;
+
+}
+
+.NSystem {
+
+grid-area: NSystem;
+color: gold;
+
+}
+
+
+.ProcentyTxt {
+
+grid-area: ProcentyTxt;
+color: teal;
+
+}
+
+.OcruglenieTxt {
+
+grid-area: OcruglenieTxt;
+color: teal;
+
+}
+
+.GrafikiTxt {
+
+grid-area: GrafikiTxt;
+color: teal;
+
+}
+
+.TrigonometryTxt {
+
+grid-area: TrigonometryTxt;
+color: teal;
+
+}

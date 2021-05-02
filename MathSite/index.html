@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        p{
+            font-size: 2rem;
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            padding: 0.5rem;
+        }
+        .first{
+            border-left:none;
+        }
+        .last{
+            border-right:none;
+        }
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <p class="first">Text</p>
+        <p>Text</p>
+        <p>Text</p>
+        <p class="last">Text</p>
+        <h1>Header</h1>
+    </header>
+    <hr>
+ 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ 
+    <script>
+
+Start = 5;
+
+        let NAVBAR = {
+
+              'Head' : document.querySelector('header'),
+           'content' : ['test1','test2','test3','test4'],
+         copyContent : ['test1','test2','test3','test4'],
+           'wrapper' : ['p','p','p','p'],
+           'classes' : ['first', '', '', 'last'],
+ 
+           'makeHTMLString' : function (){
+
+                result = '';
+
+
+        for (let i = 0; i < this.content.length; i++) {
+
+result += `<${this.wrapper[i]} class='${this.classes[i]}'> ${this.content[i]} </${this.wrapper[i]}>`;
+
+        }
+
+                        return result;
+
+           },
+           "render"  : function(){
+
+                NAVBAR.Head.innerHTML = this.makeHTMLString();
+
+           },
+           'info'    : function (){
+                console.log(this.content);
+                }
+ 
+           }
+
+ 
+        setInterval(() => {
+
+            for (let i = 0; i < NAVBAR.content.length; i++) {
+
+
+
+                if (NAVBAR.copyContent[i] != NAVBAR.content[i]) {
+
+                    console.log(NAVBAR.copyContent[i]);
+                    console.log(NAVBAR.content[i]);
+
+                    NAVBAR.copyContent = NAVBAR.content.slice();
+                    NAVBAR.render();
+                    console.log('isWork');
+                    break;
+
+                }
+                
+            }
+
+        }, 500)
+ 
+    </script>
+</body>
+</html>
